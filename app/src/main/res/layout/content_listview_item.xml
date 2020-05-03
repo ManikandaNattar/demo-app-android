@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="UserName"
+            android:padding="10dip"
+            android:textSize="14dip"
+            android:layout_marginTop="10dp"
+          />
+        <TextView
+            android:id="@+id/umobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="UserMobile"
+            android:padding="10dip"
+            android:textSize="14dip"
+            />
+        <TextView
+            android:id="@+id/uemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="UserEmail"
+            android:padding="10dip"
+            android:textSize="14dip"/>
+
+        <TextView
+            android:id="@+id/cityid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="CityID"
+            android:padding="10dip"
+            android:textSize="14dip"
+            />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="City"
+            android:padding="10dip"
+            android:textSize="14dip"
+            />
+        <TextView
+            android:id="@+id/usertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="UserType"
+            android:padding="10dip"
+            android:textSize="14dip"
+            />
+</LinearLayout>
+
+
+

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DemoAPP</string>
+    <string name="user_name">UserName
+        <font color='red'>*</font></string>
+    <string name="user_email">UserEmail
+        <font color='red'>*</font></string>
+    <string name="user_mobile">UserMobile
+        <font color='red'>*</font></string>
+    <string name="city">City
+        <font color='red'>*</font></string>
+    <string name="cityname">CityName
+        <font color='red'>*</font></string>
+    <string name="user_type">UserType
+        <font color='red'>*</font></string>
+    <string name="product_id">ProductID
+        <font color='red'>*</font></string>
+    <string name="product_name">Product Name
+        <font color='red'>*</font></string>
+    <string name="product_desc">Product Description
+        <font color='red'>*</font></string>
+    <string name="product_price">Product Price
+        <font color='red'>*</font></string>
+
+</resources>

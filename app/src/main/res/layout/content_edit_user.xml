@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:background="#FFFFFF"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/input_name"
+        android:text="@string/user_name"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="150dp"
+        android:padding="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter a name"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/input_email"
+        android:text="@string/user_email"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="150dp"
+        android:padding="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter a email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/input_mobile"
+        android:text="@string/user_mobile"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="150dp"
+        android:padding="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter a mobile"
+        android:inputType="number"
+        android:digits="0123456789+"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/input_city"
+        android:text="@string/city"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:layout_margin="10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <AutoCompleteTextView
+        android:id="@+id/edit_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="150dp"
+        android:padding="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"
+        android:ems="10"
+        android:hint="Enter a city"
+        >
+        <requestFocus />
+    </AutoCompleteTextView>
+        <Button
+            android:id="@+id/btr_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/add"
+            android:onClick="Add"
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/input_user_types"
+        android:text="@string/user_type"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:layout_margin="10dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/edit_user_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="150dp"
+        android:padding="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"
+        android:ems="10"
+        android:hint="select a user type"
+        android:singleLine="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btr_create"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btr_cancel"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/bt_create"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
